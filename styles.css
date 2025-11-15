@@ -42,7 +42,7 @@ main:not(.text_grid, .text_grid_title), p:not(.text_grid, .text_grid_title) {
 }
 
 hr {
-    border: 2.5px solid #c0041c;
+    border: 2.5px solid aquamarine;
   border-radius: 10px;
   opacity: 70%
 }
@@ -116,13 +116,13 @@ li.nav-item {
 }
 
 .navbar-brand{
-  color: #c0041c !important;
+  color: aquamarine !important;
 }
 
 
 .navbar .navbar-nav .nav-link.active {
     font-weight: 700 !important;
-    color: #c0041c !important;
+    color: aquamarine !important;
 }
 
 .navbar-brand, .navbar-nav li.nav-item a.nav-link {
@@ -153,7 +153,7 @@ li.nav-item {
   width: 0%;
   content: '.'; /* make invisible, dot beneath links */
   color: transparent;
-  background: #c0041c;
+  background: aquamarine;
   height: 2px;
 
 }
@@ -169,29 +169,29 @@ a.nav-link:hover:after {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #c0041c !important;
+    color: aquamarine !important;
 }
 
 
 p > a:hover {
-  color: #c0041c;
+  color: aquamarine;
   text-decoration: none;
 }
 
 p > a {
-  color: #c0041c;
+  color: aquamarine;
   text-decoration: none;
 }
 
 p > a:not(.lightbox) {
   position: relative;
-  color: #c0041c;
+  color: aquamarine;
   text-decoration: none;
 }
 
 
 ul.share li a {
-    background-color: #c0041c;
+    background-color: aquamarine;
 }
 
 p > a:before:not(img, #TOC) {
@@ -201,18 +201,18 @@ p > a:before:not(img, #TOC) {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #c0041c;
+  background-color: aquamarine;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
 
 a {
-  color: #c0041c;
+  color: aquamarine;
 }
 
 a:hover {
-  color: #c0041c;
+  color: aquamarine;
 }
 
 p > a:hover::before {
@@ -339,10 +339,10 @@ width: 100%;
 
 
 .inline-photo {
-  border: 1em solid #BA0020;
-  border-bottom: 4em solid #BA0020;
+  border: 1em solid aquamarine;
+  border-bottom: 4em solid aquamarine;
   border-radius: .25em;
-  box-shadow: 1em 1em 2em .25em #d56679;
+  box-shadow: 1em 1em 2em .25em aquamarine;
   margin: 2em auto;
   transform: translateY(4em); //rotateZ(-5deg);
   transition: transform 4s .25s cubic-bezier(0,1,.3,1),
@@ -542,7 +542,7 @@ header:not(.headroom):not(.quarto-title-block).is-visible {
   padding: 40px 0px 20px 0px;
   width: 100%;
   margin-left: 10px;
-  border-bottom: 3px solid #c0041c;
+  border-bottom: 3px solid aquamarine;
 }
 
 .achievements .work:last-child {
@@ -1025,23 +1025,23 @@ width: 100%;
 }
 
 .btn-21:hover:before {
-  background: linear-gradient(to right, transparent, red);
+  background: linear-gradient(to right, transparent, aquamarine);
 }
 
 .btn-21:hover:after {
-  background: linear-gradient(to bottom, transparent, red);
+  background: linear-gradient(to bottom, transparent, aquamarine);
 }
 
 .btn-21 span:hover:before {
-  background: linear-gradient(to top, transparent, red);
+  background: linear-gradient(to top, transparent, aquamarine);
 }
 
 .btn-21 span:hover:after {
-  background: linear-gradient(to left, transparent, red);
+  background: linear-gradient(to left, transparent, aquamarine);
 }
 
 .btn-21:hover {
-  color: red;
+  color: aquamarine;
 }
 
 .btn-21:active:before {
@@ -1180,7 +1180,7 @@ display: grid;
 
 
 .card:hover, .card:focus, .card:active{
-  box-shadow: inset 0 100px 1000px 10px rgba(192, 4, 28, .5);
+  box-shadow: inset 0 100px 1000px 10px rgba(0, 180, 170, 0.5);
 }
 
 .card_team:hover, .card_team:focus, .card_team:active{
@@ -1191,7 +1191,7 @@ display: grid;
 
 
 .card_team:hover {
-  box-shadow: 1em 1em 2em .25em #c0041c;
+  box-shadow: 1em 1em 2em .25em aquamarine;
   transition: all .4s ease;
 }
 
@@ -1590,7 +1590,7 @@ a#hoverlogo{
 }
 
 a#hoverlogo:hover {
-  color: red;
+  color: aquamarine;
 }
    
      .inline-photo3 {
@@ -1675,7 +1675,7 @@ h3#hover_esp:hover{
 
 
 .txt-rotate {
-  color: #C60115;
+  color: aquamarine;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -1746,7 +1746,7 @@ code span {
 
 div.sourceCode {
   background: #2a2a2a;
-  border: 3px solid #F3182E;
+  border: 3px solid aquamarine;
   border-style: ;
   font-size: .9em;
 }
@@ -1754,13 +1754,13 @@ div.sourceCode {
 
 div.sourceCode#text {
   background: linear-gradient(to right, rgba(0, 4, 40, 0.9), rgba(0, 78, 146, 0.9));
-  border: 3px solid #F3182E;
+  border: 3px solid aquamarine;
   border-style: ;
   font-size: 1.1em;
 }
 
 div.sourceCode pre code {
-  color:red;
+  color:aquamarine;
 }
 
 
@@ -1803,12 +1803,12 @@ code {
 /*arrows, parenthesis*/
 
 code span.ot { 
-  color: #C60115 !important;
+  color: aquamarine !important;
   
 }
 
 code span.op { 
-  color: #C60115 !important;
+  color: aquamarine !important;
   
 }
 
@@ -1932,7 +1932,7 @@ code span.dv {
   border-radius: 0px;
   color: white;
   font-weight: bold;
-  border: 3.5px solid #BF041C;
+  border: 3.5px solid aquamarine;
     border-radius: 10px;
 }
 
@@ -1955,7 +1955,7 @@ code span.dv {
 
 
 .card-left {
-  border: 3.5px solid #BF041C;
+  border: 3.5px solid aquamarine;
   background: #00325E ;
   border-radius: 10px;
   color: white;
@@ -2044,7 +2044,7 @@ code span.dv {
 
 /*card events*/
 .card-left {
-  border: 2.5px solid #FD0E35;
+  border: 2.5px solid aquamarine;
   background: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%); 
   border-radius: 10px;
   color: white;
@@ -2138,26 +2138,26 @@ div.listing-subtitle,
 }
 
 #quarto-header .quarto-category{
-   border: 1px solid #BF041C;
+   border: 1px solid aquamarine;
    color: white;
 }
 
 #learn-r .listing-category{
    color: white;
-   border: 1px solid #BF041C;
+   border: 1px solid aquamarine;
 }
 
 
 div.body div.listing-categories div.listing-category{
   
    color: white;
-   border: 1px solid #BF041C;
+   border: 1px solid aquamarine;
   
 }
 
 .layout_grid .image-right .listing-category{
    color: white;
-   border: 1px solid #BF041C;
+   border: 1px solid aquamarine;
 }
 
 
@@ -2191,7 +2191,7 @@ div.body div.listing-categories div.listing-category{
 }
 
 .nav-footer a.nav-link:hover{
-  color: red!important;
+  color: aquamarine!important;
 }
 
 .nav-footer a.nav-link:active{
@@ -2406,7 +2406,7 @@ bottom: 0 !important;
   padding-left: 16px;
   margin: 10px 10px;
   text-align: center;
-  border: 2px solid #c0041c;
+  border: 2px solid aquamarine;
   margin-top: -100px;
   margin-bottom: 90px;
 }
@@ -2532,7 +2532,7 @@ background-color: black;
 }
 .quote-content {
   text-align: center;
-  border: 2px solid #c0041c;
+  border: 2px solid aquamarine;
   padding: 0 3%;
   position: relative;
   top:80px;
@@ -2556,7 +2556,7 @@ background-color: black;
 
 .quote-name {
   margin-top: 5%;
-  color: red;
+  color: aquamarine;
 }
 .quote-copy {
   margin-top: -2%;
@@ -2612,10 +2612,10 @@ display: none;
 hr.sep-2 {
   border: 0; 
   height: 2px; 
-  background-image: linear-gradient(to right, #f0f0f0, #3498db, #c0041c, #f0f0f0)}
+  background-image: linear-gradient(to right, #f0f0f0, #3498db, aquamarine, #f0f0f0)}
   
 hr.sep-2-f {
- border: 1px solid #c0041c;
+ border: 1px solid aquamarine;
   
 }
 
@@ -2901,7 +2901,7 @@ div.about-entity .title{
 
 .quarto-listing-table{
   background: linear-gradient(to left, #000428, #004e92);
-    border: 3px solid #BA0020 !important;
+    border: 3px solid aquamarine !important;
 }
 
 .quarto-listing-table th{
@@ -2969,7 +2969,7 @@ width:20vw;
 
 
 #listing-Resources .card-left{
-  border: 2.5px solid #FD0E35;
+  border: 2.5px solid aquamarine;
   background: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%); 
   border-radius: 10px;
   color: white;
@@ -3010,12 +3010,12 @@ background-clip: text;
   margin-bottom: 1rem;
   color: black;
   vertical-align: top;
-  border-color: #BA0020;
+  border-color: aquamarine;
 }
 
 .table td,
 .table th {
-  border-bottom: 2px solid #BA0020; /* Change this value to increase or decrease the thickness of the cell borders */
+  border-bottom: 2px solid aquamarine; /* Change this value to increase or decrease the thickness of the cell borders */
   
 }
 
@@ -3106,7 +3106,7 @@ figcaption {
     width: 100%;
   height: auto;
   margin-top: -14px;
-  box-shadow: -.5em .5em 1em 0em #c0041c; /* Modified box shadow values */
+  box-shadow: -.5em .5em 1em 0em aquamarine; /* Modified box shadow values */
 
   /*border-radius: 0% 0% 11% 21% / 10% 10% 0% 21%;*/
 }
@@ -3120,7 +3120,7 @@ figcaption {
 }
 .about .left hr{
    width: -60%;
-  border-top: 3px solid #c0041c;
+  border-top: 3px solid aquamarine;
   border-radius: 10px;
   border-bottom: none;
 }
@@ -3224,7 +3224,7 @@ figcaption {
   width: 100%;
   height: auto;
   margin-top: -14px;
-  box-shadow: .5em .5em 1em 0em #c0041c; /* Modified box shadow values */
+  box-shadow: .5em .5em 1em 0em aquamarine; /* Modified box shadow values */
 
 }
 
@@ -3236,7 +3236,7 @@ figcaption {
 
 .about2 .right2 hr {
   width: -60%;
-  border-top: 3px solid #c0041c;
+  border-top: 3px solid aquamarine;
   border-radius: 10px;
   border-bottom: none;
 }
@@ -3336,7 +3336,7 @@ figcaption {
   width: 100%;
   height: auto;
   margin-top: -14px;
-  box-shadow: -.5em .5em 1em 0em #c0041c; /* Modified box shadow values */
+  box-shadow: -.5em .5em 1em 0em aquamarine; /* Modified box shadow values */
 
 }
 
@@ -3348,7 +3348,7 @@ figcaption {
 
 .about3 .left3 hr {
   width: -60%;
-  border-top: 3px solid #c0041c;
+  border-top: 3px solid aquamarine;
   border-radius: 10px;
   border-bottom: none;
 }
@@ -3440,7 +3440,7 @@ figcaption {
   width: 100%;
   height: auto;
   margin-top: -14px;
-    box-shadow: .5em .5em 1em 0em #c0041c; /* Modified box shadow values */
+    box-shadow: .5em .5em 1em 0em aquamarine; /* Modified box shadow values */
 
 }
 
@@ -3452,7 +3452,7 @@ figcaption {
 
 .about4 .left4 hr {
   width: -60%;
-  border-top: 3px solid #c0041c;
+  border-top: 3px solid aquamarine;
   border-radius: 10px;
   border-bottom: none;
 }
@@ -3548,7 +3548,7 @@ figcaption {
   width: 100%;
   height: auto;
   margin-top: -14px;
-  box-shadow: -.5em .5em 1em 0em #c0041c; /* Modified box shadow values */
+  box-shadow: -.5em .5em 1em 0em aquamarine; /* Modified box shadow values */
 
 }
 
@@ -3560,7 +3560,7 @@ figcaption {
 
 .about5 .left5 hr {
   width: -60%;
-  border-top: 3px solid #c0041c;
+  border-top: 3px solid aquamarine;
   border-radius: 10px;
   border-bottom: none;
 }
@@ -3625,7 +3625,7 @@ div.about-contents main#quarto-document-content.content.column-page{
 
 
 div.quarto-about-trestles.column-page div.about-contents{
-  border-left: 2px solid red;
+  border-left: 2px solid aquamarine;
 }
 
 @media (max-width: 991px) {
@@ -3780,7 +3780,7 @@ background: repeating-radial-gradient(circle at bottom left, #fedc00 0%, #fedc00
 /*Change code variable color (box shadow)*/
 
 .red-frame {
-  border: 4px solid #ff0000; /* Red border color */
+  border: 4px solid aquamarine; /* Red border color */
 }
 
 
@@ -3790,7 +3790,7 @@ background: repeating-radial-gradient(circle at bottom left, #fedc00 0%, #fedc00
 .button_i2ds{
   width: 170px;
   height: 30px;
-  border: 2px solid #BA0020;
+  border: 2px solid aquamarine;
   font-size: 8px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -3810,10 +3810,10 @@ background: repeating-radial-gradient(circle at bottom left, #fedc00 0%, #fedc00
 
 .button_i2ds:hover
 {
-  background: #BA0020;
+  background: aquamarine;
   color: white;
-  box-shadow: 0 0 10px #BA0020,
-              0 0 10px #BA0020;
+  box-shadow: 0 0 10px aquamarine,
+              0 0 10px aquamarine;
   filter:
 }
 
@@ -3968,4 +3968,139 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 
 html body.nav-fixed.quarto-light header#title-block-header.quarto-title-block.default.page-columns.page-full div.quarto-title-banner.page-columns.page-full{
   background: black !important;
+}
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 105vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #001219;
+  overflow: hidden;
+}
+
+/* Waves */
+.waves .wave {
+  position: absolute;
+  width: 200%;
+  height: 12%;
+  left: -50%;
+  bottom: 0;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  opacity: 0.8;
+  animation: waveAnimation 12s infinite linear;
+}
+
+#wave1 {
+  background: url('images/waves/wave1.svg');
+  animation-duration: 14s;
+  opacity: 0.45;
+}
+
+#wave2 {
+  background: url('images/waves/wave2.svg');
+  animation-duration: 10s;
+  opacity: 0.35;
+}
+
+#wave3 {
+  background: url('images/waves/wave3.svg');
+  animation-duration: 8s;
+  opacity: 0.25;
+}
+
+#wave4 {
+  background: url('images/waves/wave4.svg');
+  animation-duration: 6s;
+  opacity: 0.2;
+}
+
+@keyframes waveAnimation {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-25%); }
+}
+
+/* Logo spacing + sizing */
+.hero-logo {
+  margin-bottom: 20px;
+}
+
+.hero-logo-img {
+  width: 70%;
+  max-width: 900px;
+}
+
+/* ===========================
+   PIXEL FISH FORMATION
+   Vanessa M. Quintana
+   =========================== */
+
+/* Pixel grid container */
+.pixel-school {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/* Each fish container */
+.pixel-fish {
+  position: relative;
+  width: 180px;
+  height: 120px;
+  margin: 0 40px;
+  overflow: visible;
+  animation: swim-away 12s ease-in-out infinite;
+}
+
+.pixel-fish:nth-child(2) {
+  animation-delay: 2s;
+  transform: scale(0.9);
+}
+.pixel-fish:nth-child(3) {
+  animation-delay: 4s;
+  transform: scale(0.8);
+}
+
+/* Pixel squares */
+.pixel {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #64dfdf;
+  opacity: 0;
+  animation: form-pixel 2.8s forwards;
+}
+
+/* Pixel formation keyframe */
+@keyframes form-pixel {
+  0% {
+    opacity: 0;
+    transform: translate(
+      calc(-80px + (160px * random())),
+      calc(-80px + (160px * random()))
+    ) scale(0.3);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fish swimming away keyframe */
+@keyframes swim-away {
+  0%, 45% { transform: translateX(0); }
+  60% { transform: translateX(200px); opacity: 1; }
+  80% { opacity: 0; }
+  100% { transform: translateX(-200px); opacity: 0; }
 }

@@ -1,86 +1,81 @@
 website:
- # cookie-consent:
- #   type: express
- #   style: interstitial
- #   palette: dark
- #   policy-url: www.hertiecodingclub.com
- #   prefs-text: "text"
-  google-analytics: "G-HJEMN0LJY7"
-  title: ""
-  site-url: https://www.hertiecodingclub.com/
-  favicon: images/hcc.png
-  page-footer:
-    left: 
-      - text: "{{< fa regular copyright >}} {{< fa solid circle-user >}} 2024 HCC | J.Roa"
-        href: https://creativecommons.org/licenses/by/2.0/
-    center: 
-      - text:  · [![](https://quarto.org/quarto.png){fig-alt="Quarto" width=65px}](https://quarto.org/)  engine ·
-        href: https://quarto.org 
-    right:
-      - text: "{{< fa solid square-envelope size=lg >}}"
-        href: mailto:hertiecodingclub@gmail.com
-      - text: "{{< fa brands slack size=lg >}}"
-        href: http://hertiecodingclub.slack.com
-      - text: "{{< fa brands github size=lg >}}"
-        href: https://github.com/Hertie-Coding-Club
-      - text: "{{< fa brands twitter size=lg >}}"
-        href: https://twitter.com/HertieCodingCLB
-      - text: "{{< fa brands instagram size=lg >}}"
-        href: https://www.instagram.com/hertiecodingclub/
-      - text: "{{< fa brands youtube size=lg >}}"
-        href: https://youtube.com/@hertiecodingclub
+  title: "Vanessa M. Quintana"
+  site-url: https://YOUR-SITE-URL
+  favicon: images/vmq_short.png   # Replace later
+
   navbar:
-    logo: images/hcc_final.png
-    href: https://www.hertiecodingclub.com/
+    logo: images/vmq.png   # Replace with your logo when ready
+    href: index.qmd
     collapse-below: lg
     pinned: true
     right:
-      - id: howto
-        icon: house-fill
-        href: index.qmd
+
+      - icon: house-fill
         text: "Home"
-      - text: "{{< fa solid people-group >}} Members"
+        href: index.qmd
+
+      - text: "{{< fa solid diagram-project >}} Model Library"
         menu:
-          - text: "{{< fa solid person-chalkboard >}} Team"
-            href: members/team/team.qmd
-          - text: "{{< fa solid scale-balanced >}} Club Statutes"
-            href: members/statute/statute.qmd
+          - text: "Agent-Based Models"
+            href: models/abm/index.qmd
+          - text: "Habitat & HSI Models"
+            href: models/habitat/index.qmd
+          - text: "Contaminant Exposure Models"
+            href: models/contaminants/index.qmd
+
       - icon: mortarboard-fill  
         text: "Learn"
         menu:
-          - text: "{{< fa brands r-project >}} R"
-            href: learn/rstudio.qmd
-          - text: "{{< fa brands python >}} Python"
-            href: learn/python.qmd
-          - text: "{{< fa solid screwdriver-wrench >}} I2DS Tools"
-            href: learn/i2ds.qmd
-      - text: "{{< fa solid meteor >}} Material"
-        href: material/index.qmd
-      - icon: bi-calendar3  
-        href: events/index.qmd
+          - text: "What is an Ecological Model?"
+            href: learn/modeling_basics.qmd
+          - text: "Habitat Modeling"
+            href: learn/habitat_basics.qmd
+          - text: "Agent-Based Modeling"
+            href: learn/abm_basics.qmd
+          - text: "Coupled Models"
+            href: learn/applied_basics.qmd
+
+      - text: "{{< fa solid meteor >}} Modeling Toolkit"
+        menu:
+          - text: "Shiny Dashboards"
+            href: tools/dashboards/index.qmd
+          - text: "Living Documents"
+            href: tools/documents/index.qmd
+          - text: "Co-Development Materials"
+            href: tools/workshop/index.qmd
+          - text: "River Herring Habitat Model Tools"
+            href: tools/RHHM/index.qmd
+          - text: "Groundwater Flow Model Automation"
+            href: tools/groundwater_auto/index.qmd
+          - text: "GoFish Toolkit"
+            href: tools/gofish/index.qmd
+
+      - icon: bi-calendar3
         text: "Events"
-      #- icon: fingerprint  
-      #  href: register/register.qmd
-      #  text: "Register"
+        menu:
+          - text: "Workshops"
+            href: events/workshops/index.qmd
+          - text: "Collaborations"
+            href: events/collaboration/index.qmd
+          - text: "Webinars"
+            href: events/webinars/index.qmd
+          - text: "Conference Talks"
+            href: events/conferences/index.qmd
+          - text: "Educational Outreach"
+            href: events/outreach/index.qmd
+
       - text: "{{< fa regular newspaper >}} News"
         href: news/index.qmd
-      - text: "{{< fa solid laptop-code >}} About us"
+
+      - text: "{{< fa solid user >}} About"
         menu:
-          - text: "{{< fa solid school-flag >}} Who are we"
-            href: about_us/index.qmd
-          - text: "{{< fa solid circle-nodes >}} Hertie Clubs"
-            href: about_us/hertieclubs.qmd
-          - text: "{{< fa solid shield-alt >}} Privacy Policy"
-            href: about_us/privacy.qmd
-          - text: "{{< fa solid file-alt >}} Impressum"
-            href: about_us/impressum.qmd
-            
-       
-     
-comments:
-  giscus:
-    repo: jurjoroa/hcc-website
-    
+          - text: "About Me"
+            href: about/index.qmd
+          - text: "CV"
+            href: about/cv.qmd
+          - text: "Photo Gallery"
+            href: about/photos.qmd
 
-
-
+      - icon: envelope-fill
+        text: "Contact"
+        href: contact/index.qmd

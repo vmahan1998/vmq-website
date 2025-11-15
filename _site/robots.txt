@@ -1,1 +1,1 @@
-Sitemap: https://www.hertiecodingclub.com/sitemap.xml
+Sitemap: https://YOUR-SITE-URL/sitemap.xml
