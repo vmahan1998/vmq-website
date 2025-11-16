@@ -57,33 +57,42 @@ comments: false
 
 <div class="hero-container">
 
-  <!-- Logo -->
-  <div class="hero-logo">
-    <img src="images/vmq.png" class="hero-logo-img">
+  <!-- Row: left bubbles – center fish – right bubbles -->
+  <div class="hero-graphics">
+    <!-- Left bubbles -->
+    <img src="images/risebubs.gif" alt="Left Bubbles"
+         class="vmq-fish-side left-fish">
+
+    <!-- Center Block = centerpiece fish + title + subtitle + button -->
+    <div class="center-stack">
+      <img src="images/welcome_fish.gif" alt="Center Fish"
+           class="vmq-fish-center">
+
+      <h1 class="hero-title">Simulating Dynamic Ecological Systems</h1>
+
+      <p class="hero-subtitle">
+        Hydrodynamics • Agent-Based Models • Habitat Modeling • Co-Development
+      </p>
+
+      <a href="models/abm/index.qmd" class="hero-button">
+        Explore My Modeling ToolKit
+      </a>
+    </div>
+
+    <!-- Right bubbles -->
+    <img src="images/risebubs.gif" alt="Right Bubbles"
+         class="vmq-fish-side right-fish">
+
   </div>
 
-  <!-- Title -->
-  <h1 class="hero-title">Ecological Modeling for Dynamic Estuary Systems</h1>
-
-  <!-- Subtitle -->
-  <p class="hero-subtitle">
-    Hydrodynamics • Agent-Based Models • Mercury Exposure • Habitat Modeling • Co-Production
-  </p>
-
-  <!-- CTA Button -->
-  <a href="models/abm/index.qmd" class="hero-button">Explore My Models</a>
-
-  <!-- Animated Waves -->
+  <!-- Animated Waves pinned to bottom -->
   <div class="waves">
     <div class="wave" id="wave1"></div>
     <div class="wave" id="wave2"></div>
     <div class="wave" id="wave3"></div>
     <div class="wave" id="wave4"></div>
   </div>
-
 </div>
-
-
 
 <!-- ====================================================== -->
 <!-- FEATURE TILE GRID — FOUR MAIN CATEGORIES -->
@@ -137,55 +146,6 @@ comments: false
         <div class="dots"><span></span><span></span><span></span></div>
       </div>
     </a>
-  </div>
-
-</div>
-
-<div class="pixel-school">
-
-  <!-- FISH 1 -->
-  <div class="pixel-fish">
-    <!-- Generated pixel layout for fish silhouette -->
-    <!-- 80–100 pixel elements recommended -->
-    <!-- Example pixels -->
-    <div class="pixel" style="top:60px; left:30px;"></div>
-    <div class="pixel" style="top:55px; left:40px;"></div>
-    <div class="pixel" style="top:50px; left:50px;"></div>
-    <div class="pixel" style="top:65px; left:55px;"></div>
-    <div class="pixel" style="top:70px; left:70px;"></div>
-    <div class="pixel" style="top:60px; left:85px;"></div>
-    <div class="pixel" style="top:55px; left:100px;"></div>
-    <div class="pixel" style="top:60px; left:115px;"></div>
-    <div class="pixel" style="top:65px; left:130px;"></div>
-    <div class="pixel" style="top:50px; left:140px;"></div>
-  </div>
-
-  <!-- FISH 2 -->
-  <div class="pixel-fish">
-    <div class="pixel" style="top:62px; left:25px;"></div>
-    <div class="pixel" style="top:58px; left:38px;"></div>
-    <div class="pixel" style="top:54px; left:52px;"></div>
-    <div class="pixel" style="top:68px; left:57px;"></div>
-    <div class="pixel" style="top:74px; left:72px;"></div>
-    <div class="pixel" style="top:63px; left:88px;"></div>
-    <div class="pixel" style="top:58px; left:102px;"></div>
-    <div class="pixel" style="top:63px; left:118px;"></div>
-    <div class="pixel" style="top:70px; left:132px;"></div>
-    <div class="pixel" style="top:54px; left:145px;"></div>
-  </div>
-
-  <!-- FISH 3 -->
-  <div class="pixel-fish">
-    <div class="pixel" style="top:63px; left:30px;"></div>
-    <div class="pixel" style="top:59px; left:43px;"></div>
-    <div class="pixel" style="top:55px; left:55px;"></div>
-    <div class="pixel" style="top:69px; left:60px;"></div>
-    <div class="pixel" style="top:73px; left:75px;"></div>
-    <div class="pixel" style="top:62px; left:89px;"></div>
-    <div class="pixel" style="top:59px; left:105px;"></div>
-    <div class="pixel" style="top:64px; left:119px;"></div>
-    <div class="pixel" style="top:68px; left:135px;"></div>
-    <div class="pixel" style="top:55px; left:148px;"></div>
   </div>
 
 </div>

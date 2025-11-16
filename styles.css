@@ -4024,83 +4024,61 @@ html body.nav-fixed.quarto-light header#title-block-header.quarto-title-block.de
   100% { transform: translateX(-25%); }
 }
 
-/* Logo spacing + sizing */
-.hero-logo {
-  margin-bottom: 20px;
-}
 
-.hero-logo-img {
-  width: 70%;
-  max-width: 900px;
-}
-
-/* ===========================
-   PIXEL FISH FORMATION
-   Vanessa M. Quintana
-   =========================== */
-
-/* Pixel grid container */
-.pixel-school {
-  position: relative;
-  width: 100%;
-  height: 350px;
+/* ROW 1: bubbles – center stack – bubbles */
+.hero-graphics {
   display: flex;
+  align-items: flex-end;       /* aligns bubble bottoms with bottom of center block */
   justify-content: center;
+  gap: 2.5rem;                 /* slightly tighter spacing */
+  margin-top: -0.5rem;         /* <<< pulls whole row UP */
+  margin-bottom: 0.25rem;      /* less gap before title */
+  padding: 0;                  /* ensures no hidden vertical space */
+}
+
+/* CENTER BLOCK (fish + title + subtitle + button) */
+.center-stack {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-top: 40px;
+  margin-top: -0.3rem;         /* <<< pulls center up slightly */
 }
 
-/* Each fish container */
-.pixel-fish {
-  position: relative;
-  width: 180px;
-  height: 120px;
-  margin: 0 40px;
-  overflow: visible;
-  animation: swim-away 12s ease-in-out infinite;
+/* CENTERPIECE FISH (your preserved size) */
+.vmq-fish-center {
+  width: 600px;
+  height: 150px;
+  display: block;
+  margin: 0 auto 0.2rem auto;  /* reduces gap before title */
+  image-rendering: pixelated;
 }
 
-.pixel-fish:nth-child(2) {
-  animation-delay: 2s;
-  transform: scale(0.9);
-}
-.pixel-fish:nth-child(3) {
-  animation-delay: 4s;
-  transform: scale(0.8);
-}
-
-/* Pixel squares */
-.pixel {
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background: #64dfdf;
-  opacity: 0;
-  animation: form-pixel 2.8s forwards;
+/* SIDE BUBBLE GIFS */
+.vmq-fish-side {
+  width: 80px;
+  height: auto;                        /* <<< prevents stretching */
+  opacity: 0.7;
+  image-rendering: pixelated;
 }
 
-/* Pixel formation keyframe */
-@keyframes form-pixel {
-  0% {
-    opacity: 0;
-    transform: translate(
-      calc(-80px + (160px * random())),
-      calc(-80px + (160px * random()))
-    ) scale(0.3);
-  }
-  60% {
-    opacity: 1;
-    transform: translate(0, 0) scale(1);
-  }
-  100% {
-    opacity: 1;
-  }
+.left-fish { transform: scaleX(-1); }
+
+/* TITLE + SUBTITLE close to fish */
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 0.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255,255,255,0.6);
 }
 
-/* Fish swimming away keyframe */
-@keyframes swim-away {
-  0%, 45% { transform: translateX(0); }
-  60% { transform: translateX(200px); opacity: 1; }
-  80% { opacity: 0; }
-  100% { transform: translateX(-200px); opacity: 0; }
+.hero-subtitle {
+  margin-top: 0rem;
+  margin-bottom: 0.4rem;
+}
+
+/* CTA BUTTON bottom aligns with bubble GIF bottoms */
+.hero-button {
+  margin-top: 0.3rem;
+  margin-bottom: 0rem;                /* critical for alignment */
 }

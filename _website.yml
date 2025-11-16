@@ -1,10 +1,10 @@
 website:
   title: "Vanessa M. Quintana"
   site-url: https://YOUR-SITE-URL
-  favicon: images/vmq_short.png   # Replace later
+  favicon: images/vmq.png
 
   navbar:
-    logo: images/vmq.png   # Replace with your logo when ready
+    logo: images/vmq.png
     href: index.qmd
     collapse-below: lg
     pinned: true
@@ -14,17 +14,11 @@ website:
         text: "Home"
         href: index.qmd
 
-      - text: "{{< fa solid diagram-project >}} Model Library"
-        menu:
-          - text: "Agent-Based Models"
-            href: models/abm/index.qmd
-          - text: "Habitat & HSI Models"
-            href: models/habitat/index.qmd
-          - text: "Contaminant Exposure Models"
-            href: models/contaminants/index.qmd
-
+      # ----------------------------------------------------
+      # 1. Learn About Ecological Modeling
+      # ----------------------------------------------------
       - icon: mortarboard-fill  
-        text: "Learn"
+        text: "Learn About Ecological Modeling"
         menu:
           - text: "What is an Ecological Model?"
             href: learn/modeling_basics.qmd
@@ -35,6 +29,9 @@ website:
           - text: "Coupled Models"
             href: learn/applied_basics.qmd
 
+      # ----------------------------------------------------
+      # 2. Modeling Toolkit   <-- moved ABOVE Model Library
+      # ----------------------------------------------------
       - text: "{{< fa solid meteor >}} Modeling Toolkit"
         menu:
           - text: "Shiny Dashboards"
@@ -49,6 +46,18 @@ website:
             href: tools/groundwater_auto/index.qmd
           - text: "GoFish Toolkit"
             href: tools/gofish/index.qmd
+
+      # ----------------------------------------------------
+      # 3. Model Library   <-- moved BELOW Toolkit
+      # ----------------------------------------------------
+      - text: "{{< fa solid diagram-project >}} Model Library"
+        menu:
+          - text: "Agent-Based Models"
+            href: models/abm/index.qmd
+          - text: "Habitat & HSI Models"
+            href: models/habitat/index.qmd
+          - text: "Contaminant Exposure Models"
+            href: models/contaminants/index.qmd
 
       - icon: bi-calendar3
         text: "Events"
