@@ -71,11 +71,11 @@ comments: false
       <h1 class="hero-title">Simulating Dynamic Ecological Systems</h1>
 
       <p class="hero-subtitle">
-        Hydrodynamics • Agent-Based Models • Habitat Modeling • Co-Development
+        Hydrodynamics • Agent-Based Modeling • Habitat Modeling • Co-Development & Outreach
       </p>
-
-      <a href="models/abm/index.qmd" class="hero-button">
-        Explore My Modeling ToolKit
+      
+      <a href="learn/modeling_basics.qmd" class="btn-21">
+        <span>Modeling ToolKit</span>
       </a>
     </div>
 
@@ -95,274 +95,192 @@ comments: false
 </div>
 
 <!-- ====================================================== -->
+<!-- VMQ Animated Intro Section Side by Sde  -->
+<!-- ====================================================== -->
+
+<div class="hcc-intro">
+
+  <!-- LEFT: Slideshow + Title + Button -->
+  <div class="hcc-left">
+
+    <div class="slideshow">
+      <img src="images/VMQ/Misc/PXL_20250821_190604919.jpg">
+      <img src="images/VMQ/Workshops/IMG_9271.JPG">
+      <img src="images/VMQ/Conferences/20251107_155319.jpg">
+      <img src="images/VMQ/Conferences/Screenshot_20251115_134541_Photos.jpg">
+      <img src="images/VMQ/Field_Work/PXL_20231013_105335902.jpg">
+      <img src="images/VMQ/Field_Work/PXL_20231013_110633731.jpg">
+    </div>
+
+    <div class="hcc-left-text">
+      <h1> Complex Systems Need Simple Models</h1>
+      <p class="subtitle">Transparent, Reproducible, and Co-Developed Modeling Tools</p>
+
+      <button class="learn-btn"
+              onclick="window.location.href='learn/modeling_basics.qmd'">
+        Learn More
+      </button>
+    </div>
+
+  </div>
+
+  <!-- RIGHT: Quote -->
+  <div class="hcc-right">
+
+    <div class="quote-box">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125" class="quote-icon">
+        <path fill="white" d="M6.438,50.5v35.875h35.875V50.5h-20.5c0-11.321,9.179-20.5,20.5-20.5V14.625C22.498,14.625,6.438,30.686,6.438,50.5z 
+        M93.562,30V14.625c-19.814,0-35.875,16.061-35.875,35.875v35.875h35.875V50.5h-20.5C73.062,39.179,82.241,30,93.562,30z"/>
+      </svg>
+
+      <p class="quote-text">
+        <i>Complex ecological systems don’t need complicated models—
+they need transparent ones.
+My goal is to co-develop simple, reproducible modeling tools that reflect community priorities, clarify assumptions, and support real decision-making.</i>
+      </p>
+
+      <img src="images/vmq.png" class="quote-logo">
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ====================================================== -->
 <!-- FEATURE TILE GRID — FOUR MAIN CATEGORIES -->
 <!-- ====================================================== -->
 
-<div class="wrap">
+<div class="tile-section-bg">
 
-  <!-- TILE 1 -->
-  <div class="tile">
-    <img src="images/home_sections/abm.jpg" />
-    <a href="models/abm/index.qmd">
-      <div class="text">
-        <h1>Agent-Based Models</h1>
-        <p class="animate-text">Behavioral ecology, schooling, environmental cues, exposure pathways.</p>
-        <div class="dots"><span></span><span></span><span></span></div>
-      </div>
-    </a>
-  </div>
+  <div class="wrap">
 
-  <!-- TILE 2 -->
-  <div class="tile">
-    <img src="images/home_sections/hsi.jpg" />
-    <a href="models/habitat/index.qmd">
-      <div class="text">
-        <h1>Habitat & HSI Models</h1>
-        <p class="animate-text">Life-stage HSI, integrated fitness, Penobscot mapping.</p>
-        <div class="dots"><span></span><span></span><span></span></div>
-      </div>
-    </a>
-  </div>
-
-  <!-- TILE 3 -->
-  <div class="tile">
-    <img src="images/home_sections/contaminants.jpg" />
-    <a href="models/contaminants/index.qmd">
-      <div class="text">
-        <h1>Contaminant Exposure</h1>
-        <p class="animate-text">SPM transport × hydrodynamics × MeHg bioaccumulation.</p>
-        <div class="dots"><span></span><span></span><span></span></div>
-      </div>
-    </a>
-  </div>
-
-  <!-- TILE 4 -->
-  <div class="tile">
-    <img src="images/home_sections/outreach.jpg" />
-    <a href="events/outreach/index.qmd">
-      <div class="text">
-        <h1>Co-Development & Outreach</h1>
-        <p class="animate-text">Workshops, Tribal partnerships, science communication.</p>
-        <div class="dots"><span></span><span></span><span></span></div>
-      </div>
-    </a>
-  </div>
-
-</div>
-
-##########
-
-
-<head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">  
-
-<!-- Microsoft Clarity -->
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "gh3qhfx6uq");
-</script>
-
-</head>
-
-<!--  It doesn't work with class. We nned to put style  -->
-<div style=" flex-direction: column; width: 100%; height: 110vh; margin-top: -185px; background-size: cover; background-position: center; background-repeat: no-repeat; overflow: hidden; overflow: clip;  contain: content; display: flex; align-items: center; justify-content: center; background: black;">
-
-<css-doodle>
-  <style>
-    @grid: 50x1 / 50vmin;
-    :container {
-      perspective: 23vmin;
-    }
-    background: @m(
-      @r(200, 240), 
-      radial-gradient(
-        @p(#142850, #27496D, #0C7B93, #005691, #046582, #db0f1a, white) 15%,
-        transparent 40%
-      ) @r(100%) @r(100%) / @r(1%, 3%) @lr no-repeat
-    );
-
-    @size: 50%;
-    @place-cell: center;
-
-    border-radius: 50%;
-    transform-style: preserve-3d;
-    animation: scale-up 30s linear infinite;
-    animation-delay: calc(@i * -.4s);
-
-    @keyframes scale-up {
-      0% {
-        opacity: 0;
-        transform: translate3d(0, 0, 0) rotate(0);
-      }
-      10% { 
-        opacity: 1; 
-      }
-      95% {
-        transform:
-          translate3d(0, 0, @r(50vmin, 55vmin))
-          rotate(@r(-360deg, 360deg));
-      }
-      100% {
-        opacity: 0;
-        transform: translate3d(0, 0, 1vmin);
-      }
-    }
-  </style>
-</css-doodle>
-
-<div class="image">
-<img src="images/hcc_long_welw_1400.png">
-  </div>
-<div class="image_mob">
-<img src="images/hcc_long_wel_smartw_1400.png">
-  </div>
-
-<button class="btn-21"> <span> Learn more </span> </button>
-
-</div>
-
-
-
-
-
-<div class="intro_f">
-  <div class="intro-slideshow">
-  <div class="image-wrapper"><img   src="images/Pictures HCC/kick_off_event1.jpeg"></div>
-  <div class="image-wrapper"><img   src="images/Pictures HCC/kick_off_event2.jpeg"></div>
-  <div class="image-wrapper"><img   src="images/Pictures HCC/kick_off_event3.jpeg"></div>
-  <div class="image-wrapper"><img   src="images/Pictures HCC/event2.jpeg"></div>
-  <div class="image-wrapper"><img   src="images/Pictures HCC/event3.jpeg"></div>
-</div>
-  <div class="scroll-text intro-text">
-<div class="quote-wrapper">
-<div class="quote-content">
-  <div class="quote-img">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" xml:space="preserve" class="svg-quote">
-  <g>
-    <g>
-      <path fill="#FFFFFF" fill-rule="evenodd" clip-rule="evenodd" d="M6.438,50.5v35.875h35.875V50.5h-20.5c0-11.321,9.179-20.5,20.5-20.5V14.625    C22.498,14.625,6.438,30.686,6.438,50.5z M93.562,30V14.625c-19.814,0-35.875,16.061-35.875,35.875v35.875h35.875V50.5h-20.5    C73.062,39.179,82.241,30,93.562,30z"/>
-    </g>
-  </g>
-</svg>
-
-</div>
-  <p class="quote-copy" style="color:white;"> <i> Our goal as a club is to help everyone and between us learn coding skills and show that coding is for everyone, no matter our background.  </i>
-</p>
-  <img   src="images/hcc_logo_card.png" style="width:150px; margin-bottom:20px;">
-
-</div>
-</div>
-  </div>
-  <div class="intro-header">
-    <h1 class="scroll-text">We are the <br> Hertie Coding Club</h1>
-    <p class="scroll-text"">Everybody can learn to code</p>
-  </div>
-</div>
-
-<div class="quote-container-bg">
-<div class="layout_grid_objectives_mob">
-    <div class="quote-container">
-        <h1 class="quote-text scroll-text" style="color:white;">Our goal as a club is to help everyone and between us learn coding skills and show that coding is for everyone, no matter our background.</h1>
-        <img   src="images/hcc_logo_card.png" style="width:150px; margin-bottom:20px;">
+    <!-- TILE 1 — Hydrodynamics -->
+    <div class="tile">
+      <img src="images/VMQ/Field_Work/PXL_20230929_104536477.jpg" />
+      <a href="models/hydrodynamics/index.qmd">
+        <div class="text">
+          <h1>Hydrodynamics</h1>
+          <p class="animate-text">
+            Flow regimes, tidal asymmetry, sediment transport, and estuarine dynamics.
+          </p>
+          <div class="dots"><span></span><span></span><span></span></div>
+        </div>
+      </a>
     </div>
+
+    <!-- TILE 2 — Agent-Based Modeling -->
+    <div class="tile">
+      <img src="images/home_sections/abm.jpg" />
+      <a href="models/abm/index.qmd">
+        <div class="text">
+          <h1>Agent-Based Modeling</h1>
+          <p class="animate-text">
+            Behavior, migration, schooling, cues, and exposure pathways.
+          </p>
+          <div class="dots"><span></span><span></span><span></span></div>
+        </div>
+      </a>
     </div>
+
+    <!-- TILE 3 — Habitat Modeling -->
+    <div class="tile">
+      <img src="images/home_sections/habmod.jpg" />
+      <a href="models/habitat/index.qmd">
+        <div class="text">
+          <h1>Habitat Modeling</h1>
+          <p class="animate-text">
+            Life-stage HSI, integrated fitness, and Penobscot River mapping.
+          </p>
+          <div class="dots"><span></span><span></span><span></span></div>
+        </div>
+      </a>
+    </div>
+
+    <!-- TILE 4 — Co-Development & Outreach -->
+    <div class="tile">
+      <img src="images/VMQ/Workshops/PXL_20250806_114400592.jpg" />
+      <a href="events/outreach/index.qmd">
+        <div class="text">
+          <h1>Co-Development & Outreach</h1>
+          <p class="animate-text">
+            Workshops, partnerships, mentoring, and science communication.
+          </p>
+          <div class="dots"><span></span><span></span><span></span></div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
 </div>
 
 <div class="container-blue">
-<div class="layout_grid_objectives">
-<div class="achievements">
-  <div class="work">
-    <div class="work-icon">
-<lord-icon
-    src="https://cdn.lordicon.com/zjscbpdr.json"
-    trigger="loop"
-    delay="250"
-    colors="primary:#30c9e8,secondary:#104891,tertiary:#c71f16,quaternary:#ebe6ef"
-    style="width:100px;height:100px">
-</lord-icon>
-      <p class="work-heading scroll-text">Skill Development</p>
-    </div>
-    <div class="work-description">
-      <p class="work-text scroll-text">Teach essential coding skills in R and other languages for data analysis and visualization to boost members' policy analysis abilities.</p>
-    </div>
-  </div>
-  <div class="work">
-    <div class="work-icon">
-<lord-icon
-    src="https://cdn.lordicon.com/flvisirw.json"
-    trigger="loop"
-    delay="250"
-    colors="primary:#d1e3fa,secondary:#ee66aa,tertiary:#f4a09c"
-    style="width:100px;height:100px">
-</lord-icon>
-      <p class="work-heading scroll-text">Collaborative Learning</p>
-    </div>
-    <div class="work-description">
-      <p class="work-text scroll-text">Foster a supportive and inclusive learning atmosphere where club members can help each other overcome the challenges of the coding learning curve and develop their skills collectively.</p>
-    </div>
-  </div>
-  <div class="work">
-    <div class="work-icon">
-      <lord-icon
-    src="https://cdn.lordicon.com/ckatldkn.json"
-    trigger="loop"
-    delay="250"
-    colors="primary:#646e78,secondary:#c71f16,tertiary:#ebe6ef"
-    style="width:100px;height:100px">
-</lord-icon>
-      <p class="work-heading scroll-text">Adaptive Curriculum</p>
-    </div>
-    <div class="work-description">
-      <p class="work-text scroll-text">Regularly assess and adapt the club's programming curriculum to reflect the evolving needs of the Hertie community and the broader industry landscape, ensuring club members are prepared with relevant languages and tools.</p>
-    </div>
-  </div>
-  <div class="work">
-    <div class="work-icon">
-<lord-icon
-    src="https://cdn.lordicon.com/jkzrgmvk.json"
-    trigger="loop"
-    delay="400"
-    colors="primary:#f1485b,secondary:#33546d,tertiary:#30c9e8,quaternary:#fffdfd"
-    style="width:100px;height:100px">
-</lord-icon>
-      <p class="work-heading scroll-text">Community Building</p>
-    </div>
-    <div class="work-description">
-      <p class="work-text scroll-text">Establish the club as a hub for coding enthusiasts, within the Hertie community and abroad, promoting collaboration, networking, and knowledge sharing.</p>
-    </div>
-  </div>
-  <div class="work">
-    <div class="work-icon">
-<lord-icon
-    src="https://cdn.lordicon.com/gkstbnbz.json"
-    trigger="loop"
-    delay="1000"
-    style="width:100px;height:100px">
-</lord-icon>
-      <p class="work-heading scroll-text">Real-World Application</p>
-    </div>
-    <div class="work-description">
-      <p class="work-text scroll-text">Encourage club members to apply their coding skills to real-world policy problems, empowering them to make data-driven decisions and contribute to better policy design and analysis.</p>
-    </div>
-  </div>
-<div class="work">
-    <div class="work-description">
 
-</div>
+  <h1 class="section-title">
+    Five Pillars of My Modeling Philosophy
+  </h1>
+
+  <div class="layout_grid_objectives">
+    <div class="achievements">
+
+      <!-- Transparent Modeling -->
+      <div class="work">
+        <div class="work-icon">
+          <img src="images/glasses.gif" class="pillar-icon">
+        </div>
+        <p class="work-heading">Transparent Modeling</p>
+        <p class="work-text scroll-text">
+          I build models that clearly state their assumptions, uncertainty, and limitations, replacing black-box tools with transparent, communicable frameworks grounded in ecological realism.
+        </p>
+      </div>
+
+      <!-- Reproducible Science -->
+      <div class="work">
+        <div class="work-icon">
+          <img src="images/steps.gif" class="pillar-icon">
+        </div>
+        <p class="work-heading ">Reproducible Science</p>
+        <p class="work-text scroll-text">
+          From hydrodynamic preprocessing to agent-based simulations, every workflow is version-controlled, documented, and openly accessible to support reproducibility and scientific trust.
+        </p>
+      </div>
+
+      <!-- Co-Development -->
+      <div class="work">
+        <div class="work-icon">
+          <img src="images/consultation.gif" class="pillar-icon">
+        </div>
+        <p class="work-heading">Co-Development</p>
+        <p class="work-text scroll-text">
+          I collaborate with Tribal partners, federal agencies, fisheries managers, and local communities to ensure model assumptions and outputs reflect lived experience and shared priorities.
+        </p>
+      </div>
+
+      <!-- Simplicity in Complexity -->
+      <div class="work">
+        <div class="work-icon">
+          <img src="images/magic.gif" class="pillar-icon">
+        </div>
+        <p class="work-heading ">Simplicity in Complexity</p>
+        <p class="work-text scroll-text">
+          Complex systems don’t need complicated tools, but models that isolate key mechanisms and stay adaptable and accessible.
+        </p>
+      </div>
+
+      <!-- Decision Support -->
+      <div class="work">
+        <div class="work-icon">
+          <img src="images/puzzle.gif" class="pillar-icon">
+        </div>
+        <p class="work-heading ">Decision Support</p>
+        <p class="work-text scroll-text">
+          I design tools that support decision-making by visualizing risk, mapping habitat, exploring scenarios, and helping communities and agencies respond to environmental challenges.
+        </p>
+      </div>
 
     </div>
   </div>
-</div>
 
-
-</div>
-</div>
 </div>
 
 <div class="container-blue2">
@@ -388,8 +306,8 @@ comments: false
   <img src='images/home_sections/hertie.jpg'/>
    <a href="../members/team/team.html">
   <div class="text">
-  <h1>Who are we?</h1>
-  <p class="animate-text"> We are a group of enthusiastic students at the Hertie School who are passionate about coding and data science. </p>
+  <h1>Who Am I?</h1>
+  <p class="animate-text">I’m a PhD candidate studying hydrodynamics, mercury contamination, and anadromous fish ecology in the Penobscot River. My work blends community engagement, modeling, and science communication.</p>
 <div class="dots">
     <span></span>
     <span></span>
@@ -402,8 +320,8 @@ comments: false
   <img src='images/home_sections/r.jpg'/>
      <a href="../learn/rstudio.html">
   <div class="text">
-  <h1>Boost your skills and learn R</h1>
-  <p class="animate-text"> Develop your coding skills in R and other languages for data analysis and visualization. </p>
+  <h1>Boost Your Coding Skills</h1>
+  <p class="animate-text">Learn the tools I use every day—from R and Python to NetLogo, MATLAB, and Version Control—through clear, accessible lessons rooted in real ecological modeling workflows.</p>
 <div class="dots">
     <span></span>
     <span></span>
@@ -418,8 +336,8 @@ comments: false
   <img src='images/home_sections/certifications.jpeg'/>
        <a href="../material/index.html">
   <div class="text">
-  <h1>Certifications, books and resources</h1>
-  <p class="animate-text"> Get free access to our material, books and resources to boost your coding skills. </p>
+  <h1>Modeling Toolkit & Library</h1>
+  <p class="animate-text">Explore my open-source modeling toolkit, including hydrodynamic preprocessing, habitat modeling, ABM functions, groundwater–surface water workflows, and reproducible research templates.</p>
 <div class="dots">
     <span></span>
     <span></span>
@@ -433,8 +351,8 @@ comments: false
   <img src='images/home_sections/workshop.jpeg'/>
       <a href="../events/index.html">
   <div class="text">
-  <h1>Our events at the Hertie School</h1>
-  <p class="animate-text"> Check our past and upcoming events and workshops. </p>
+  <h1>Research Updates</h1>
+  <p class="animate-text">Follow my updates on estuary dynamics, SPM transport, mercury exposure, community modeling workshops, and my dissertation progress.</p>
 <div class="dots">
     <span></span>
     <span></span>

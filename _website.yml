@@ -30,7 +30,7 @@ website:
             href: learn/applied_basics.qmd
 
       # ----------------------------------------------------
-      # 2. Modeling Toolkit   <-- moved ABOVE Model Library
+      # 2. Modeling Toolkit 
       # ----------------------------------------------------
       - text: "{{< fa solid meteor >}} Modeling Toolkit"
         menu:
@@ -48,7 +48,7 @@ website:
             href: tools/gofish/index.qmd
 
       # ----------------------------------------------------
-      # 3. Model Library   <-- moved BELOW Toolkit
+      # 3. Model Library   
       # ----------------------------------------------------
       - text: "{{< fa solid diagram-project >}} Model Library"
         menu:
@@ -62,19 +62,18 @@ website:
       - icon: bi-calendar3
         text: "Events"
         menu:
+          - text: "Calendar"
+            href: events/calendar.qmd
           - text: "Workshops"
-            href: events/workshops/index.qmd
+            href: events/index.qmd#workshops
           - text: "Collaborations"
-            href: events/collaboration/index.qmd
+            href: events/index.qmd#collaborations
           - text: "Webinars"
-            href: events/webinars/index.qmd
+            href: events/index.qmd#webinars
           - text: "Conference Talks"
-            href: events/conferences/index.qmd
+            href: events/index.qmd#conferences
           - text: "Educational Outreach"
-            href: events/outreach/index.qmd
-
-      - text: "{{< fa regular newspaper >}} News"
-        href: news/index.qmd
+            href: events/index.qmd#outreach
 
       - text: "{{< fa solid user >}} About"
         menu:
@@ -82,9 +81,10 @@ website:
             href: about/index.qmd
           - text: "CV"
             href: about/cv.qmd
+          - icon: envelope-fill
+          - text: "Contact Me"
+            href: about/photos.qmd
           - text: "Photo Gallery"
             href: about/photos.qmd
 
-      - icon: envelope-fill
-        text: "Contact"
         href: contact/index.qmd

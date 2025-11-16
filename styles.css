@@ -16,7 +16,7 @@ body {
 }
 
 main:not(.text_grid, .text_grid_title), p:not(.text_grid, .text_grid_title) {
-  font-size: 1.1em !important;
+  font-size: 1.5em !important;
 }
     
     .navbar-brand > img {
@@ -528,77 +528,62 @@ header:not(.headroom):not(.quarto-title-block).is-visible {
   box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
 }
 
-.achievements {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 20px;
-}
-
-.achievements .work {
-  display: flex;
-  flex-direction: row;
-  padding: 40px 0px 20px 0px;
+/* Fix achievements inside container-blue so header shows above icons */
+.container-blue .achievements {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 40px !important;
+  padding: 0 !important;
+  margin-top: 40px !important;
   width: 100%;
-  margin-left: 10px;
-  border-bottom: 3px solid aquamarine;
 }
 
-.achievements .work:last-child {
-  border-bottom: none;
-}
-
-.achievements .work .work-icon {
+/* Each work item */
+.container-blue .achievements .work {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: column;           /* vertical layout for your pillars */
   align-items: center;
-  width: 30%;
-  margin-left: 10%;
-}
-
-.achievements .work .work-icon i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  font-size: 50px;
-  color: #ffffff;
-  border-radius: 50%;
-  background-color: #00325E; /* Add a fancy color here */
-  padding: 12px;
-}
-
-.achievements .work .work-icon .work-heading {
-  font-size: 25px;
-  letter-spacing: 2px;
-  color: #ffffff; /* Add a complementary color here */
+  text-align: center;
+  border-bottom: none;              /* remove old styling */
   margin: 0;
-  text-align: center;
-  padding: 10px 20px;
+  padding: 20px 0;
 }
 
-
-
-.achievements .work .work-description {
+/* ICON container */
+.container-blue .achievements .work .work-icon {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70%;
-  margin-left: 0;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+  width: auto;                      /* stop forcing 30% width */
 }
 
-.achievements .work .work-description .work-text {
-  font-size: 15px;
-  color: #fff;
-  margin: -5px;
-  text-align: center;
+/* ICON image (THIS makes your GIFs 40×40) */
+.container-blue .achievements .work .work-icon img {
+  width: 300px !important;
+  height: 300px !important;
+  object-fit: contain !important;
+  display: block;
 }
 
+/* HEADING under icon */
+.container-blue .achievements .work .work-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white !important;
+  margin-top: 4px;
+  margin-bottom: 2px;   /* ↓ THIS controls space above paragraph */
+}
 
+/* Description text */
+.container-blue .achievements .work .work-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: white !important;
+  max-width: 420px;
+  opacity: 0.95;
+  margin-top: 4px;
+}
 
 .about-me {
   display: flex;
@@ -650,8 +635,6 @@ header:not(.headroom):not(.quarto-title-block).is-visible {
     text-align: center;
   }
 }
-
-
 
 
 .layout_footer{
@@ -762,11 +745,11 @@ div.listing-author{
 }
 
 .section_white{
-  margin-top: 100px;
+  margin-top: 250px;
 }
 
 .section_white2{
-  margin-top: 150px;
+  margin-top: 250px;
 }
 
 
@@ -944,179 +927,6 @@ width: 100%;
   --spacing-xxl: 64px;
   --width-container: 1200px;
 }
-
-
-
-
-
-.btn-21 {
-  cursor: pointer;
-  font-family: Urbanist;
-  bottom: -100px;
-  animation: zoomInUp; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /
-  text-transform: uppercase;
-  width: 120px;
-  height: 40px;
-  position: relative;
-  color: white;
-  transition: all 0.5s ease-in-out;
-  border-radius: 0px;
-  background: transparent;
-  overflow: hidden;
-  border: none;
-}
-
-.btn-21:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(to right, transparent, #bbb);
-  animation: btn-21-right 2s linear infinite;
-  transition: 0.5s ease-in-out;
-}
-
-.btn-21:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(to bottom, transparent, #bbb);
-  animation: btn-21-bottom 2s linear infinite;
-  animation-delay: 1s;
-  transform: translateY(-100%);
-}
-
-.btn-21 span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 4px;
-}
-
-.btn-21 span:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(to left, transparent, #bbb);
-  animation: btn-21-left 2s linear infinite;
-}
-
-.btn-21 span:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(to top, transparent, #bbb);
-  animation: btn-21-top 2s linear infinite;
-  animation-delay: 1s;
-  transform: translateY(-100%);
-}
-
-.btn-21:hover:before {
-  background: linear-gradient(to right, transparent, aquamarine);
-}
-
-.btn-21:hover:after {
-  background: linear-gradient(to bottom, transparent, aquamarine);
-}
-
-.btn-21 span:hover:before {
-  background: linear-gradient(to top, transparent, aquamarine);
-}
-
-.btn-21 span:hover:after {
-  background: linear-gradient(to left, transparent, aquamarine);
-}
-
-.btn-21:hover {
-  color: aquamarine;
-}
-
-.btn-21:active:before {
-  background: linear-gradient(to right, transparent, #00a7fc);
-}
-
-.btn-21:active:after {
-  background: linear-gradient(to bottom, transparent, #00a7fc);
-}
-
-.btn-21 span:active:before {
-  background: linear-gradient(to top, transparent, #00a7fc);
-}
-
-.btn-21 span:active:after {
-  background: linear-gradient(to left, transparent, #00a7fc);
-}
-
-.btn-21:active {
-  color: #00a7fc;
-}
-
-@keyframes btn-21-right {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(100%);
-  }
-
-}
-
-@keyframes btn-21-top {
-  0% {
-    transform: translateY(100%);
-  }
-
-  100% {
-    transform: translateY(-100%);
-  }
-
-}
-
-@keyframes btn-21-left {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
-
-}
-
-@keyframes btn-21-bottom {
-  0% {
-    transform: translateY(-100%);
-  }
-
-  100% {
-    transform: translateY(100%);
-  }
-
-}
-
-.btn-21:focus {
-  outline: none
-}
-
-
-
-
-
-
 
 /* Media query for smaller screens 
 @media only screen and (max-width: 413px) {
@@ -2297,7 +2107,8 @@ bottom: 0 !important;
   
 }
 
-  .container-blue {
+.container-blue {
+  margin-top: 100px;  /* add space ABOVE the gradient */
   background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 20%),
               linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 30%),
               linear-gradient(to right, black, black);
@@ -3817,20 +3628,21 @@ background: repeating-radial-gradient(circle at bottom left, #fedc00 0%, #fedc00
   filter:
 }
 
-.wrap
-{
+.wrap {
   margin: 20px auto 0 auto;
   width: 80%;
-  display:flex;
-  align-items:space-around;
-  max-width:1500px;
+  display: flex;
+  justify-content: space-around;  /* FIXED */
+  align-items: flex-start;        /* safe + visible */
+  max-width: 1500px;
 }
+
 .tile
 {
-  width:380px;
-  height:450px;
+  width:350px;
+  height:350px;
   margin:10px;
-  background-color:#99aeff;
+  background-color:aquamarine;
   border-radius:15px;
   display:inline-block;
   background-size:cover;
@@ -3854,6 +3666,7 @@ background: repeating-radial-gradient(circle at bottom left, #fedc00 0%, #fedc00
   transition: all 0.4s ease-out;
   filter: brightness(0.7) blur(1px);
 }
+
 .tile .text
 {
 /*   z-index:99; */
@@ -4028,12 +3841,10 @@ html body.nav-fixed.quarto-light header#title-block-header.quarto-title-block.de
 /* ROW 1: bubbles – center stack – bubbles */
 .hero-graphics {
   display: flex;
-  align-items: flex-end;       /* aligns bubble bottoms with bottom of center block */
+  align-items: center;     /* <<< FIX: centers vertically */
   justify-content: center;
-  gap: 2.5rem;                 /* slightly tighter spacing */
-  margin-top: -0.5rem;         /* <<< pulls whole row UP */
-  margin-bottom: 0.25rem;      /* less gap before title */
-  padding: 0;                  /* ensures no hidden vertical space */
+  gap: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 /* CENTER BLOCK (fish + title + subtitle + button) */
@@ -4041,44 +3852,324 @@ html body.nav-fixed.quarto-light header#title-block-header.quarto-title-block.de
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -0.3rem;         /* <<< pulls center up slightly */
-}
-
-/* CENTERPIECE FISH (your preserved size) */
-.vmq-fish-center {
-  width: 600px;
-  height: 150px;
-  display: block;
-  margin: 0 auto 0.2rem auto;  /* reduces gap before title */
-  image-rendering: pixelated;
+  margin-top: -4rem;       /* you can reduce this after fixing alignment */
 }
 
 /* SIDE BUBBLE GIFS */
 .vmq-fish-side {
   width: 80px;
-  height: auto;                        /* <<< prevents stretching */
+  height: auto;
   opacity: 0.7;
   image-rendering: pixelated;
 }
 
 .left-fish { transform: scaleX(-1); }
 
-/* TITLE + SUBTITLE close to fish */
+/* CENTERPIECE FISH */
+.vmq-fish-center {
+  width: 600px;
+  height: 140px;
+  display: block;
+  margin: 0 0 2rem 0;   /* <<< more space UNDER the fish */
+}
+
+/* TITLE */
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 0.15rem;
+  margin-top: 0rem;
+  margin-bottom: 0.8rem;   /* <<< more space between title + subtitle */
   font-weight: 700;
   color: #ffffff;
   text-shadow: 0 0 8px rgba(255,255,255,0.6);
 }
 
+/* SUBTITLE */
 .hero-subtitle {
   margin-top: 0rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 1.4rem;   /* <<< more space between subtitle + button */
+  font-weight: 300;
+  color: aquamarine;
+  font-size: 1.35rem;
+  letter-spacing: 0.5px;
 }
 
-/* CTA BUTTON bottom aligns with bubble GIF bottoms */
-.hero-button {
-  margin-top: 0.3rem;
-  margin-bottom: 0rem;                /* critical for alignment */
+/* BUTTON */
+.btn-21 {
+  margin-top: 1.5rem;       /* <<< optional extra cushion above button */
+}
+
+
+/* ============================================================
+   FIXED + RESPONSIVE + READABLE VERSION OF BTN-21
+   ============================================================ */
+
+.btn-21 {
+  cursor: pointer;
+  font-family: Urbanist, sans-serif;
+  text-transform: uppercase;
+
+  /* FIXED: Remove hard-coded small width/height */
+  padding: 0.9rem 2.2rem;
+  min-width: 200px;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  color: white;
+  border: none;
+  background: transparent;
+
+  position: relative;
+  overflow: visible;   /* important: prevents clipping */
+  transition: all 0.35s ease-in-out;
+}
+
+/* TOP MOVING LINE */
+.btn-21:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, transparent, #bbb);
+  animation: btn-21-right 2s linear infinite;
+}
+
+/* RIGHT MOVING LINE */
+.btn-21:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #bbb);
+  animation: btn-21-bottom 2s linear infinite;
+  animation-delay: 1s;
+}
+
+/* INNER SPAN for bottom + left borders */
+.btn-21 span {
+  display: block;
+  position: relative;
+  padding: 0.2rem 0.4rem;
+}
+
+/* BOTTOM LINE */
+.btn-21 span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to left, transparent, #bbb);
+  animation: btn-21-left 2s linear infinite;
+}
+
+/* LEFT LINE */
+.btn-21 span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, transparent, #bbb);
+  animation: btn-21-top 2s linear infinite;
+  animation-delay: 1s;
+}
+
+/* HOVER COLORS */
+.btn-21:hover { color: aquamarine; }
+
+.btn-21:hover:before {
+  background: linear-gradient(to right, transparent, aquamarine);
+}
+.btn-21:hover:after {
+  background: linear-gradient(to bottom, transparent, aquamarine);
+}
+.btn-21 span:hover:before {
+  background: linear-gradient(to top, transparent, aquamarine);
+}
+.btn-21 span:hover:after {
+  background: linear-gradient(to left, transparent, aquamarine);
+}
+
+/* ACTIVE COLORS (click) */
+.btn-21:active { color: #00a7fc; }
+.btn-21:active:before { background: linear-gradient(to right, transparent, #00a7fc); }
+.btn-21:active:after { background: linear-gradient(to bottom, transparent, #00a7fc); }
+.btn-21 span:active:before { background: linear-gradient(to top, transparent, #00a7fc); }
+.btn-21 span:active:after { background: linear-gradient(to left, transparent, #00a7fc); }
+
+/* Animation Keyframes */
+@keyframes btn-21-right {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+@keyframes btn-21-bottom {
+  0%   { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+@keyframes btn-21-left {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+@keyframes btn-21-top {
+  0%   { transform: translateY(100%); }
+  100% { transform: translateY(-100%); }
+}
+
+.btn-21:focus { outline: none; }
+
+/* Full-width, full-height GIF background */
+.tile-section-bg {
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  background: url("images/pixel_flow.gif") center/cover repeat-y;
+  background-attachment: fixed;  /* optional: parallax effect */
+}
+
+/* Your existing wrap */
+.wrap {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* MAIN SIDE-BY-SIDE WRAPPER */
+.hcc-intro {
+  display: flex;
+  width: 100%;
+  min-height: 80vh;
+  margin-top: 3rem;
+}
+
+/* LEFT SIDE — SLIDESHOW BACKGROUND */
+.hcc-left {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+/* SLIDESHOW IMAGES */
+.slideshow img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: slideshow 25s infinite;
+}
+
+/* Offset timing for each slide */
+.slideshow img:nth-child(1) { animation-delay: 0s; }
+.slideshow img:nth-child(2) { animation-delay: 5s; }
+.slideshow img:nth-child(3) { animation-delay: 10s; }
+.slideshow img:nth-child(4) { animation-delay: 15s; }
+.slideshow img:nth-child(5) { animation-delay: 20s; }
+
+@keyframes slideshow {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  25% { opacity: 1; }
+  35% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* LEFT TEXT BLOCK */
+.hcc-left-text {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 10;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.hcc-left-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+/* BUTTON */
+.learn-btn {
+  padding: 0.6rem 1.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background: transparent;
+  border: 2px solid aquamarine;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.learn-btn:hover {
+  background: aquamarine;
+  color: #00141d;
+}
+
+/* RIGHT SIDE */
+.hcc-right {
+  flex: 1;
+  background: #00141d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+/* QUOTE BOX */
+.quote-box {
+  max-width: 450px;
+  color: white;
+  text-align: center;
+}
+
+.quote-icon {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.quote-text {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.quote-logo {
+  width: 150px;
+
+.hcc-title {
+  color: #ffffff;
+  font-weight: 800;        /* strong bold */
+  text-shadow: 0 0 8px rgba(255,255,255,0.45);  /* optional glow */
+  margin-bottom: 0.8rem;   /* keeps spacing elegant */
+}
+
+.quote-text {
+  font-size: 1.4rem;             /* <<< larger text */
+  line-height: 1.6;              /* better readability */
+  color: #ffffff;                /* pure white text */
+  font-weight: 600;              /* slightly stronger than default */
+  text-shadow: 0 0 6px rgba(0,0,0,0.6);  /* soft contrast glow */
+  max-width: 540px;              /* keeps it readable */
+  margin: 1rem 0;                /* clean spacing */
+}
+
+.section-title {
+  color: white !important;
+  font-weight: 800;
+  text-align: center;
+  font-size: 2.8rem;   /* adjust to your preferred size */
+  margin-bottom: 20px;
 }
