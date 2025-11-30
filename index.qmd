@@ -105,16 +105,16 @@ comments: false
 
     <div class="slideshow">
       <img src="images/VMQ/Misc/PXL_20250821_190604919.jpg">
-      <img src="images/VMQ/Workshops/IMG_9271.JPG">
-      <img src="images/VMQ/Conferences/20251107_155319.jpg">
-      <img src="images/VMQ/Conferences/Screenshot_20251115_134541_Photos.jpg">
-      <img src="images/VMQ/Field_Work/PXL_20231013_105335902.jpg">
+      <img src="images/VMQ/Field_Work/PXL_20231013_103927980.jpg">
+      <img src="images/VMQ/Field_Work/PXL_20230523_161903981 (2024_07_15 21_27_39 UTC).jpg">
+      <img src="images/VMQ/Field_Work/PXL_20230523_150021167 (2024_07_15 21_27_39 UTC).jpg">
       <img src="images/VMQ/Field_Work/PXL_20231013_110633731.jpg">
+      <img src="images/VMQ/Field_Work/PXL_20230929_083537181.NIGHT(1).jpg">
     </div>
 
-    <div class="hcc-left-text">
-      <h1> Complex Systems Need Simple Models</h1>
-      <p class="subtitle">Transparent, Reproducible, and Co-Developed Modeling Tools</p>
+    <div class="hcc-left-text"> 
+    <h1> Complex Systems <br> Need Simple Models</h1> 
+    <p class="subtitle">Transparent, Reproducible, and Co-Developed Modeling Tools</p>
 
       <button class="learn-btn"
               onclick="window.location.href='learn/modeling_basics.qmd'">
@@ -216,9 +216,10 @@ My goal is to co-develop simple, reproducible modeling tools that reflect commun
 
 <div class="container-blue">
 
-  <h1 class="section-title">
-    Five Pillars of My Modeling Philosophy
-  </h1>
+ <h1 class="hero-title" 
+    style="text-align: center; width: 100%; font-weight: 800; color: white;">
+  My Modeling Philosophy
+</h1>
 
   <div class="layout_grid_objectives">
     <div class="achievements">
@@ -229,19 +230,9 @@ My goal is to co-develop simple, reproducible modeling tools that reflect commun
           <img src="images/glasses.gif" class="pillar-icon">
         </div>
         <p class="work-heading">Transparent Modeling</p>
-        <p class="work-text scroll-text">
+        <p class="work-text "
+        >
           I build models that clearly state their assumptions, uncertainty, and limitations, replacing black-box tools with transparent, communicable frameworks grounded in ecological realism.
-        </p>
-      </div>
-
-      <!-- Reproducible Science -->
-      <div class="work">
-        <div class="work-icon">
-          <img src="images/steps.gif" class="pillar-icon">
-        </div>
-        <p class="work-heading ">Reproducible Science</p>
-        <p class="work-text scroll-text">
-          From hydrodynamic preprocessing to agent-based simulations, every workflow is version-controlled, documented, and openly accessible to support reproducibility and scientific trust.
         </p>
       </div>
 
@@ -251,7 +242,7 @@ My goal is to co-develop simple, reproducible modeling tools that reflect commun
           <img src="images/consultation.gif" class="pillar-icon">
         </div>
         <p class="work-heading">Co-Development</p>
-        <p class="work-text scroll-text">
+        <p class="work-text ">
           I collaborate with Tribal partners, federal agencies, fisheries managers, and local communities to ensure model assumptions and outputs reflect lived experience and shared priorities.
         </p>
       </div>
@@ -262,7 +253,7 @@ My goal is to co-develop simple, reproducible modeling tools that reflect commun
           <img src="images/magic.gif" class="pillar-icon">
         </div>
         <p class="work-heading ">Simplicity in Complexity</p>
-        <p class="work-text scroll-text">
+        <p class="work-text ">
           Complex systems don’t need complicated tools, but models that isolate key mechanisms and stay adaptable and accessible.
         </p>
       </div>
@@ -273,7 +264,7 @@ My goal is to co-develop simple, reproducible modeling tools that reflect commun
           <img src="images/puzzle.gif" class="pillar-icon">
         </div>
         <p class="work-heading ">Decision Support</p>
-        <p class="work-text scroll-text">
+        <p class="work-text ">
           I design tools that support decision-making by visualizing risk, mapping habitat, exploring scenarios, and helping communities and agencies respond to environmental challenges.
         </p>
       </div>
@@ -284,12 +275,46 @@ My goal is to co-develop simple, reproducible modeling tools that reflect commun
 </div>
 
 <div class="container-blue2">
-<div class="layout_grid_cards">
-<div class="section_white">
-</div> 
-</div>
+  <div class="layout_grid_cards">
+    <div class="section_white">
+
+<div class="hcc-intro">
+
+  <!-- LEFT — SLIDESHOW using EXACT SAME CLASS NAMES -->
+  <div class="hcc-left">
+    <div class="slideshow">
+      <img src="images/VMQ/Conferences//GCC_2025.jpg">
+      <img src="images/VMQ/Conferences/CERF_2025.jpg">
+      <img src="images/VMQ/Conferences/20251108_141512.jpg">
+      <img src="images/VMQ/Conferences/Screenshot_20251115_134541_Photos.jpg">
+      <img src="images/VMQ/Conferences/IMG-20251109-WA0027.jpg">
+      <img src="images/VMQ/Conferences/Blue_Economy_Summit_2025.jpg">
+      <img src="images/VMQ/Workshops/IMG_9201.JPG">
+      <img src="images/VMQ/Workshops/IMG_9234.JPG">
+      <img src="images/VMQ/Workshops/IMG_9271.JPG">
+    </div>
+  </div>
+
+  <!-- RIGHT — WHITE UPDATE BOX -->
+  <div class="hcc-right">
+    <div class="vmq-update-box">
+      <h1>Recent Updates</h1>
+      <p>
+        Community workshops, model development, conferences,
+        and collaborations — these are the latest highlights from
+        my research journey.
+      </p>
+      <a href="events/index.qmd" class="vmq-up-btn">
+        View All Updates →
+      </a>
+    </div>
+  </div>
+
 </div>
 
+    </div>
+  </div>
+</div>
 
 <script src="js/doodle.js"></script>
 <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
@@ -299,368 +324,7 @@ My goal is to co-develop simple, reproducible modeling tools that reflect commun
 </style>
 ```
 
-```{=HTML}
-<div class="wrap">
 
-<div class="tile"> 
-  <img src='images/home_sections/hertie.jpg'/>
-   <a href="../members/team/team.html">
-  <div class="text">
-  <h1>Who Am I?</h1>
-  <p class="animate-text">I’m a PhD candidate studying hydrodynamics, mercury contamination, and anadromous fish ecology in the Penobscot River. My work blends community engagement, modeling, and science communication.</p>
-<div class="dots">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  </div>
-      </a>
- </div>
-<div class="tile"> 
-  <img src='images/home_sections/r.jpg'/>
-     <a href="../learn/rstudio.html">
-  <div class="text">
-  <h1>Boost Your Coding Skills</h1>
-  <p class="animate-text">Learn the tools I use every day—from R and Python to NetLogo, MATLAB, and Version Control—through clear, accessible lessons rooted in real ecological modeling workflows.</p>
-<div class="dots">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  </div>
-        </a>
- </div>
-
-
-<div class="tile"> 
-  <img src='images/home_sections/certifications.jpeg'/>
-       <a href="../material/index.html">
-  <div class="text">
-  <h1>Modeling Toolkit & Library</h1>
-  <p class="animate-text">Explore my open-source modeling toolkit, including hydrodynamic preprocessing, habitat modeling, ABM functions, groundwater–surface water workflows, and reproducible research templates.</p>
-<div class="dots">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  </div>
-        </a>
- </div>
-  
-  <div class="tile"> 
-  <img src='images/home_sections/workshop.jpeg'/>
-      <a href="../events/index.html">
-  <div class="text">
-  <h1>Research Updates</h1>
-  <p class="animate-text">Follow my updates on estuary dynamics, SPM transport, mercury exposure, community modeling workshops, and my dissertation progress.</p>
-<div class="dots">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  </div>
- </div>
-        </a>
-</div>
-  
-  
-</div>
-```
-
-<div class="section_white2">
-</div> 
-
-<div class="layout_grid_learnr">
-
-<div class="social-media">
-
-
-```{=HTML}
-
-<h1 style="font-size: 40px;
-margin-bottom:40px;
-display: flex;
-justify-content: center;
-align-items: center;
-font-weight: 700;
-  color: #C0031C;
-  background-clip: text;
-  -webkit-background-clip: text;"
-  class="scroll-text"> Resources 
-  
-<lord-icon
-    src="https://cdn.lordicon.com/qbaenubu.json"
-    trigger="loop"
-    delay="3000"
-    colors="primary:#646e78,secondary:#ebe6ef"
-    style="width:50px;height:50px">
-</lord-icon>
-
-</h1>
-```
-
-::: {#Resources}
-:::
-
-</hr>
-
-</div> 
-
-  <div>
-
-
-```{=HTML}
-
-<h1 style="font-size: 40px;
-margin-bottom:40px;
-display: flex;
-justify-content: center;
-align-items: center;
-font-weight: 700;
-  color: #C0031C;
-  background-clip: text;
-  -webkit-background-clip: text;"
-  class="scroll-text"> Learn R 
-  
-<lord-icon
-    src="https://cdn.lordicon.com/sglcptvj.json"
-    trigger="loop"
-    delay="3000"
-    colors="primary:#646e78,secondary:#ebe6ef"
-    style="width:50px;height:50px">
-</lord-icon>
-
-</h1>
-```
- 
-::: {#learn}
-:::
-
-
-
-
-
-<div class="image-grid">
-
-::: {#learn}
-:::
-
-
-</div> 
-
-</div> 
-</div> 
-
-
-
-<hr class="sep-2" />
-
-
-
-</div>
-
-<div class="layout_grid_learnr2">
-
-
-<div>
-
-```{=HTML}
-
-<h1 style="font-size: 40px;
-margin-bottom:40px;
-display: flex;
-justify-content: center;
-align-items: center;
-font-weight: 700;
-  color: #C0031C;
-  background-clip: text;
-  -webkit-background-clip: text;"
-  class="scroll-text"> Books 
-  
-<lord-icon
-    src="https://cdn.lordicon.com/dxoycpzg.json"
-    trigger="loop"
-    delay="3000"
-    colors="primary:#646e78,secondary:#ebe6ef"
-    style="width:50px;height:50px">
-</lord-icon>
-
-</h1>
-```
-
-
-::: {#books}
-:::
-
-<a href="../books/index.html"> <button type="button" class="btn btn-primary float-end btn-sm">See all our books</button></a>
-
-</br>
-
-</div>
-
-<div>
-  
-</br>
-
-```{=HTML}
-
-<h1 style="font-size: 40px;
-margin-bottom:40px;
-display: flex;
-justify-content: center;
-align-items: center;
-font-weight: 700;
-  color: #C0031C;
-  background-clip: text;
-  -webkit-background-clip: text;"
-  class="scroll-text"> Events
-  
-<lord-icon
-    src="https://cdn.lordicon.com/qierxeeb.json"
-    trigger="loop"
-    delay="3000"
-    colors="primary:#646e78,secondary:#ebe6ef"
-    style="width:50px;height:50px">
-</lord-icon>
-
-</h1>
-```
-
-
-::: {#Events}
-:::
-
-<a href="../events/index.html"> <button type="button" class="btn btn-primary float-end btn-sm">See all our events</button></a>
-
-</div>
-
-
-</div>
-
-</br>
-
-</div> 
-
-
-<div class="layout_table">
-
-
-```{=HTML}
-
-<h1 style="font-size: 40px;
-margin-bottom:40px;
-display: flex;
-justify-content: center;
-align-items: center;
-font-weight: 700;
-  color: #C0031C;
-  background-clip: text;
-  -webkit-background-clip: text;"
-  class="scroll-text"> Certifications
-  
-<lord-icon
-    src="https://cdn.lordicon.com/rzqpczno.json"
-    trigger="loop"
-    delay="3000"
-    colors="primary:#0f4667"
-    style="width:50px;height:50px">
-</lord-icon>
-
-</h1>
-```
-
-
-::: {#material}
-:::
-
-<a href="../material/index.html"> <button type="button" class="btn btn-primary float-end btn-sm">See all our material</button></a>
-
-
-</div>
-
-</br>
-
-
-<div class="container-footer2">
-
-</div>
-
-<div class="container-footer">
-<div class="layout_hertie">
-
-<h1 style="font-size: 5vw;
-display: flex;
-align-items: center;
-align-text: center;
-font-weight: 900;
-background-image: conic-gradient(#bc0525, white, white, #bc0525, #bc0525);
-color: transparent;
-background-clip: text;
--webkit-background-clip: text;"
-class="scroll-text"> Want to know more about us and what we do?  </h1>
-</div>
-
-<div class="layout" style = "font-size: 5px">
-
-<article>
-  <img class="lukas" src="images/DSL.jpg" data-url="https://www.hertie-school.org/en/datasciencelab" >
-  <img class="lukas" src="images/MDS.jpg" data-url="https://www.hertie-school.org/en/mds" >
-  <img class="lukas" src="images/hertie.jpg" data-url="https://www.hertie-school.org/en/" >
-</article>
-
-
-</div> 
-
-
-
-```{=html}
-
-<script src="js/text_obs.js"></script>
-<script src="js/text_obs_achiev.js"></script>
-<script src="js/text.js"></script>
-<script src="js/background.js"></script>
-<script src="js/slider.js"></script>
-<script src="js/pagination.js"></script>
-
-<script> 
-
-document.addEventListener('DOMContentLoaded', function () {
-  var images = document.getElementsByClassName('lukas');
-  
-  for (var i = 0; i < images.length; i++) {
-    images[i].addEventListener('mouseup', function (event) {
-      var url = event.target.getAttribute('data-url');
-      window.open(url, '_blank');
-    });
-  }
-});
-
-</script>
-
-```
-
-
-
-<hr class="sep-2-f" style="margin-top: 50px;"/>
-
-<div style="margin-top: 50px;"/>
-
-
-
-::: {.grid}
-::: {.g-col-3}
-
-![](_site/images/hertie/DSL.png){width="150" fig-align="center"}
-
-:::
-::: {.g-col-6}
-
-![](_site/images/hcc_final.png){width="150" fig-align="center"}
-
-:::
-::: {.g-col-3}
-
-![](_site/images/hertie/hertie.png){width="150"  fig-align="center"}
 
 :::
 :::
@@ -686,8 +350,6 @@ document.addEventListener('DOMContentLoaded', function () {
  </div> 
 </div>
 </div>
-
-
 
 
 <!-- Important: apply it to html index.html  -->

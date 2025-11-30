@@ -16,12 +16,12 @@ body {
 }
 
 main:not(.text_grid, .text_grid_title), p:not(.text_grid, .text_grid_title) {
-  font-size: 1.5em !important;
+  font-size: 1.2em !important;
 }
     
     .navbar-brand > img {
-      max-height: 400px;
-      max-width: 200px;
+      max-height: 100px;
+      max-width: 100px;
       width: auto;
     }
     
@@ -29,8 +29,16 @@ main:not(.text_grid, .text_grid_title), p:not(.text_grid, .text_grid_title) {
         .sidebar nav[role=doc-toc] ul>li>a.active {
     border-left: 1px solid var(--bs-red);
     color: var(--bs-red) !important;
+    
 }
 
+.sidebar {
+  padding-top: 80px !important;
+}
+
+.sidebar nav[role="doc-toc"] {
+  margin-top: 80px !important;
+}
 
 .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
     border-left: 1px solid var(--bs-red);
@@ -532,9 +540,9 @@ header:not(.headroom):not(.quarto-title-block).is-visible {
 .container-blue .achievements {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
-  gap: 40px !important;
+  gap: 10px !important;
   padding: 0 !important;
-  margin-top: 40px !important;
+  margin-top: 10px !important;
   width: 100%;
 }
 
@@ -546,7 +554,7 @@ header:not(.headroom):not(.quarto-title-block).is-visible {
   text-align: center;
   border-bottom: none;              /* remove old styling */
   margin: 0;
-  padding: 20px 0;
+  padding: 4px 0;
 }
 
 /* ICON container */
@@ -554,35 +562,36 @@ header:not(.headroom):not(.quarto-title-block).is-visible {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 6px;
+  margin-bottom: 2px;
   width: auto;                      /* stop forcing 30% width */
 }
 
 /* ICON image (THIS makes your GIFs 40×40) */
 .container-blue .achievements .work .work-icon img {
-  width: 300px !important;
-  height: 300px !important;
+  width: 150px !important;
+  height: 150px !important;
   object-fit: contain !important;
   display: block;
 }
 
-/* HEADING under icon */
+/* Work heading (fix spacing above & below) */
 .container-blue .achievements .work .work-heading {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.2rem !important;   /* ↓ smaller text */
+  font-weight: 800;
   color: white !important;
-  margin-top: 4px;
-  margin-bottom: 2px;   /* ↓ THIS controls space above paragraph */
+  margin-top: 8px !important;      /* tighter gap from icon to heading */
+  margin-bottom: 0px !important;   /* ↓ controls top spacing before text */
 }
 
-/* Description text */
+/* Description text (work-text) */
 .container-blue .achievements .work .work-text {
-  font-size: 1.05rem;
-  line-height: 1.6;
+  font-size: 0.95rem !important;   /* ↓ smaller text */
+  line-height: 1.1 !important;     /* reduce spacing between lines */
   color: white !important;
   max-width: 420px;
   opacity: 0.95;
-  margin-top: 4px;
+  margin-top: 4px !important;     /* ↓ lowers the space between heading & text */
+  padding-top: 0px !important;
 }
 
 .about-me {
@@ -627,12 +636,13 @@ header:not(.headroom):not(.quarto-title-block).is-visible {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   
   .achievements .work .work-description .work-text {
     margin-left: 0;
     text-align: center;
+    font-size: 0.4rem;
   }
 }
 
@@ -745,11 +755,11 @@ div.listing-author{
 }
 
 .section_white{
-  margin-top: 250px;
+  margin-top: 40px;
 }
 
 .section_white2{
-  margin-top: 250px;
+  margin-top: 40px;
 }
 
 
@@ -1231,142 +1241,6 @@ display: grid;
 }
 
 
-.user-container .card:nth-child(1) {
-  background: url("members_images/giorgiocoppola.jpg") no-repeat;
-  background-size: 400px 400px;
-  background-position: center;
-}
-
-.user-container .card:nth-child(2) {
-  background: url("members_images/tushiagarwal.jpeg") no-repeat;
-  background-size: 400px 400px;
-  background-position: center;
-}
-
-.user-container .card:nth-child(3) {
-  background: url("members_images/issacjohn.jpg") no-repeat;
-  background-size: 350px 450px;
-  background-position: center;
-}
-
-.user-container .card:nth-child(4) {
-  background: url("Presentation/images/lukas.jpeg") no-repeat;
-  background-size: 400px 400px;
-  background-position: center;
-}
-.card:nth-child(5) {
-  background: url("Presentation/images/lukas.jpeg") no-repeat;
-  background-size: 400px 400px;
-  background-position: center;
-}
-.card:nth-child(6) {
-  background: url("Presentation/images/lukas.jpeg") no-repeat;
-  background-size: 400px 400px;
-  background-position: center;
-}
-.user-container .card:nth-child(7) {
-  background: url("Presentation/images/lukas.jpeg") no-repeat;
-  background-size: 400px 400px;
-  background-position: center;
-}
-.user-container .card:nth-child(8) {
-  background: url("Presentation/images/lukas.jpeg") no-repeat;
-  background-size: 400px 400px;
-  background-position: center;
-}
-
-/* Image move up */
-.card:nth-child(1):hover,
-.card:nth-child(2):hover,
-.card:nth-child(3):hover,
-.card:nth-child(4):hover,
-.card:nth-child(5):hover,
-.card:nth-child(6):hover,
-.card:nth-child(7):hover,
-.card:nth-child(8):hover{
-
-}
-
-
-.user-container #gayatrishejwal.card_team {
-  background: url("members/team/team/gayatri_shejwal/gayatrishejwal.jpg") no-repeat;
-  background-size: 300px 400px;
-  background-position: center;
-}
-
-.user-container #huydang.card_team {
-  background: url("members/team/team/huy_dang/huydang.png") no-repeat;
-  background-size: 300px 400px;
-  background-position: center;
-}
-
-.user-container #simonmunzert.card_team {
-  background: url("members/team/team/simon_munzert/simonmunzert.jpg") no-repeat;
-  background-size: 300px 400px;
-  background-position: center;
-}
-
-.user-container #jorgeroa.card_team {
-  background: url("members/team/team/jorge_roa/jorgeroa.jpeg") no-repeat;
-  background-size: 320px 350px;
-  background-position: center;
-}
-
-.user-container #lukaswarode.card_team {
-  background: url("members/team/team/lukas_warode/lukas.jpeg") no-repeat;
-  background-size: 340px 360px;
-  background-position: center;
-}
-
-.user-container #rodrigodornelles.card_team {
-  background: url("members/team/team/rodrigo_dornelles/rodrigo.jpg") no-repeat;
-  background-size: 400px 400px;
-  background-position: center;
-}
-
-.user-container #carmengarro.card_team {
-  background: url("members/team/team/carmen_garro/carmen.jpeg") no-repeat;
-  background-size: 350px 350px;
-  background-position: center;
-}
-
-.user-container #valeriagracia.card_team {
-  background: url("members/team/team/valeria_gracia/valeriagracia.jpg") no-repeat;
-  background-size: 350px 450px;
-  background-position: center;
-}
-
-.user-container #davidgaribay.card_team {
-  background: url("members/team/team/david_garibay/davidgaribay.png") no-repeat;
-  background-size: 350px 450px;
-  background-position: center;
-}
-
-.user-container #gabrielzech.card_team {
-  background: url("members/team/team/gabriel_zech/gabriel.jpg") no-repeat;
-  background-size: 320px 460px;
-  background-position: center;
-}
-.user-container #lukaslehmann.card_team {
-  background: url("members/team/team/lukas_lehmann/lukaslehmann.jpeg") no-repeat;
-  background-size: 400px 400px;
-  background-position: center;
-}
-
-.user-container #aayransalman.card_team {
-  background: url("members/staff/staff/aayran_salman/aayransalman.jpeg") no-repeat;
-  background-size:300px 500px;
-  background-position: center;
-}
-
-.user-container #ridhimasingh.card_team {
-  background: url("members/staff/staff/ridhima_singh/ridhimasingh.jpeg") no-repeat;
-  background-size:400px 400px;
-  background-position: center;
-}
-
-
-
 /* Image move up */
 .user-container .card_team:nth-child(1):hover,
 .user-container .card_team:nth-child(2):hover,
@@ -1387,7 +1261,7 @@ display: grid;
 }
 
 h3 {
-  font-size: 0.9rem;
+  font-size: 1.4rem;
 }
 p {
   font-size: 0.75rem;
@@ -2107,19 +1981,25 @@ bottom: 0 !important;
   
 }
 
-.container-blue {
-  margin-top: 100px;  /* add space ABOVE the gradient */
-  background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 20%),
-              linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 30%),
-              linear-gradient(to right, black, black);
+.container-blue { background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%,rgba(255, 255, 255, 0) 10%),
+linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 15%),
+linear-gradient(to right, black, black); 
 }
+
+/* Remove default paragraph margins */
+.container-blue p {
+  margin-top: 0px !important;
+  margin-top: 0px !important;
+  padding: 0px !important;
+}
+
     .container-footer {
   background: linear-gradient(to right, black, black);
              
 }
 
 .container-footer2{
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%),
+  background:linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%),
              linear-gradient(to right, black, black);
   margin-bottom: 0px;
   height:100px;
@@ -3419,10 +3299,13 @@ figcaption {
   }
 }
 
-
-
-
-
+.containerabout,
+.containerabout2,
+.containerabout3,
+.containerabout4,
+.containerabout5 {
+  color: white !important;
+}
 
 
 /* edit color of name of the profiles team*/
@@ -3868,7 +3751,7 @@ html body.nav-fixed.quarto-light header#title-block-header.quarto-title-block.de
 /* CENTERPIECE FISH */
 .vmq-fish-center {
   width: 600px;
-  height: 140px;
+  height: 120px;
   display: block;
   margin: 0 0 2rem 0;   /* <<< more space UNDER the fish */
 }
@@ -4061,21 +3944,22 @@ html body.nav-fixed.quarto-light header#title-block-header.quarto-title-block.de
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  animation: slideshow 25s infinite;
+  animation: slideshow 30s infinite;
 }
 
-/* Offset timing for each slide */
+/* 6 images = 30 seconds total (5 sec each) */
 .slideshow img:nth-child(1) { animation-delay: 0s; }
 .slideshow img:nth-child(2) { animation-delay: 5s; }
 .slideshow img:nth-child(3) { animation-delay: 10s; }
 .slideshow img:nth-child(4) { animation-delay: 15s; }
 .slideshow img:nth-child(5) { animation-delay: 20s; }
+.slideshow img:nth-child(6) { animation-delay: 25s; }
 
 @keyframes slideshow {
-  0% { opacity: 0; }
-  10% { opacity: 1; }
-  25% { opacity: 1; }
-  35% { opacity: 0; }
+  0%   { opacity: 0; }
+  5%   { opacity: 1; }
+  25%  { opacity: 1; }
+  30%  { opacity: 0; }
   100% { opacity: 0; }
 }
 
@@ -4090,13 +3974,14 @@ html body.nav-fixed.quarto-light header#title-block-header.quarto-title-block.de
 }
 
 .hcc-left-text h1 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: white;
 }
 
 .subtitle {
-  font-size: 1.4rem;
+  font-size: 1.0rem;
   font-weight: 300;
   margin-bottom: 1.5rem;
 }
@@ -4142,7 +4027,7 @@ html body.nav-fixed.quarto-light header#title-block-header.quarto-title-block.de
 }
 
 .quote-text {
-  font-size: 1.3rem;
+  font-size: 1.38rem;
   margin-bottom: 1.5rem;
 }
 
@@ -4157,7 +4042,7 @@ html body.nav-fixed.quarto-light header#title-block-header.quarto-title-block.de
 }
 
 .quote-text {
-  font-size: 1.4rem;             /* <<< larger text */
+  font-size: 1.8rem;             /* <<< larger text */
   line-height: 1.6;              /* better readability */
   color: #ffffff;                /* pure white text */
   font-weight: 600;              /* slightly stronger than default */
@@ -4173,3 +4058,68 @@ html body.nav-fixed.quarto-light header#title-block-header.quarto-title-block.de
   font-size: 2.8rem;   /* adjust to your preferred size */
   margin-bottom: 20px;
 }
+
+.toolkit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.toolkit-card {
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.toolkit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+}
+
+.toolkit-icon {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.toolkit-link {
+  font-weight: 700;
+  color: #004aad;
+  text-decoration: none;
+}
+
+.toolkit-link:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+   VMQ Slideshow (reliable)
+   ============================ */
+
+.vmq-update-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  backdrop-filter: blur(4px);
+  width: 80%;
+}
+
+.vmq-up-btn {
+  display: inline-block;
+  background: #008c9e;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.vmq-up-btn:hover {
+  background: #00a9bd;
+}
+

@@ -8,6 +8,7 @@ website:
     href: index.qmd
     collapse-below: lg
     pinned: true
+
     right:
 
       - icon: house-fill
@@ -17,48 +18,55 @@ website:
       # ----------------------------------------------------
       # 1. Learn About Ecological Modeling
       # ----------------------------------------------------
-      - icon: mortarboard-fill  
+      - icon: mortarboard-fill
         text: "Learn About Ecological Modeling"
         menu:
           - text: "What is an Ecological Model?"
             href: learn/modeling_basics.qmd
-          - text: "Habitat Modeling"
-            href: learn/habitat_basics.qmd
           - text: "Agent-Based Modeling"
             href: learn/abm_basics.qmd
+          - text: "Habitat Modeling"
+            href: learn/habitat_basics.qmd
           - text: "Coupled Models"
             href: learn/applied_basics.qmd
 
       # ----------------------------------------------------
-      # 2. Modeling Toolkit 
+      # 2. Modeling Toolkit
       # ----------------------------------------------------
       - text: "{{< fa solid meteor >}} Modeling Toolkit"
         menu:
-          - text: "Shiny Dashboards"
-            href: tools/dashboards/index.qmd
+          - text: "Learn to Code"
+            href: tools/coding/coding_basics.qmd
+          - text: "Version Control"
+            href: https://usace-wrises.github.io/GitHub_Workflow_Tutorial_Webpage/
+          - text: "Interactive Dashboards"
+            href: https://quarto.org/docs/dashboards/
           - text: "Living Documents"
-            href: tools/documents/index.qmd
-          - text: "Co-Development Materials"
+            href: https://bookdown.org/yihui/bookdown/
+          - text: "Model Co-Development Materials"
             href: tools/workshop/index.qmd
-          - text: "River Herring Habitat Model Tools"
-            href: tools/RHHM/index.qmd
           - text: "Groundwater Flow Model Automation"
-            href: tools/groundwater_auto/index.qmd
-          - text: "GoFish Toolkit"
-            href: tools/gofish/index.qmd
+            href: https://usace-wrises.github.io/HyporheicFloPy/intro.html
+          - text: "ArcGIS Toolbox: Groundwater Flow Model Automation (HYPE-Tool)"
+            href: https://github.com/USACE-WRISES/hype-tool
+          - text: "GoFish Library"
+            href: https://vmahan1998.github.io/GoFish/
 
       # ----------------------------------------------------
-      # 3. Model Library   
+      # 3. Model Library
       # ----------------------------------------------------
       - text: "{{< fa solid diagram-project >}} Model Library"
         menu:
           - text: "Agent-Based Models"
-            href: models/abm/index.qmd
-          - text: "Habitat & HSI Models"
-            href: models/habitat/index.qmd
-          - text: "Contaminant Exposure Models"
-            href: models/contaminants/index.qmd
+            href: models/abm/ABM_Library.qmd
+          - text: "River Herring Habitat Model"
+            href: https://github.com/vmahan1998/RiverHerringHabitatModel_TechReport.git
+          - text: "Dashboards"
+            href: https://vkzfr3-vanessa-mahan.shinyapps.io/rh_dashboard/
 
+      # ----------------------------------------------------
+      # 4. Events
+      # ----------------------------------------------------
       - icon: bi-calendar3
         text: "Events"
         menu:
@@ -75,16 +83,29 @@ website:
           - text: "Educational Outreach"
             href: events/index.qmd#outreach
 
-      - text: "{{< fa solid user >}} About"
+      # ----------------------------------------------------
+      # 5. About Me
+      # ----------------------------------------------------
+      - text: "{{< fa solid user >}} About Me"
         menu:
-          - text: "About Me"
-            href: about/index.qmd
-          - text: "CV"
-            href: about/cv.qmd
+          - text: "Background"
+            href: about/index.qmd#background
+          - text: "Education"
+            href: about/index.qmd#education
+          - text: "Current Projects"
+            href: about/index.qmd#current-projects
+          - text: "Future Projects"
+            href: about/index.qmd#future-projects
+          - text: "Previous Research Experience"
+            href: about/index.qmd#previous-research-experience
+          - text: "Community Involvement"
+            href: about/index.qmd#community-involvement
           - icon: envelope-fill
-          - text: "Contact Me"
-            href: about/photos.qmd
+          - text: "Contact Me & Follow My Work"
+            href: about/index.qmd#contact-me-and-follow-my-work
+          - text: "Grants & Awards"
+            href: about/index.qmd#grants-and-awards
+          - text: "Publications"
+            href: about/index.qmd#publications
           - text: "Photo Gallery"
             href: about/photos.qmd
-
-        href: contact/index.qmd
